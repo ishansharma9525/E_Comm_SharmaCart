@@ -33,7 +33,7 @@ A full-stack E-Commerce web application built using React, Django, Django REST F
 
 ### Home Page
 
-![Home](./Screenshot/Home.png)
+![Home](./ScreenShot/Home.png)
 
 ### Cart Page
 
