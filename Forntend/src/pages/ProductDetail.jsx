@@ -38,13 +38,13 @@ function ProductDetails() {
     return <div>No product found</div>;
   }
 
-  // const handleAddToCart = () => {
-  //   if(!localStorage.getItem('access_token')){
-  //     window.location.href = '/login';
-  //     return;
-  //   }
-  //   addToCart(product.id);
-  // }
+  const handleAddToCart = () => {
+    if(!localStorage.getItem('access_token')){
+      window.location.href = '/login';
+      return;
+    }
+    addToCart(product.id);
+  }
 
   return (
     <div className="min-h-screen bg-gray-100 flex justify-center items-center py-10">
@@ -64,7 +64,7 @@ function ProductDetails() {
               {product.price}
             </p>
             <button
-              onClick={() => addToCart(product.id)}
+              onClick={() => handleAddToCart()}
               className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
             >
               Add to Cart 🛒
